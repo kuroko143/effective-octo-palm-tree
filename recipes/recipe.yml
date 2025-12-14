@@ -1,5 +1,5 @@
 ---
-name: template
+name: bluebuild
 description: This is my personal OS image.
 base-image: ghcr.io/ublue-os/bazzite-dx
 image-version: latest
@@ -20,7 +20,9 @@ modules:
         - stow
     remove:
       packages:
+        - libvirt
         - lutris
+        - qemu
         - waydroid
 
   - type: default-flatpaks
