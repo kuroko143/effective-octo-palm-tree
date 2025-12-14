@@ -23,6 +23,7 @@ modules:
         - libvirt
         - lutris
         - qemu
+        - Sunshine
         - waydroid
 
   - type: default-flatpaks
