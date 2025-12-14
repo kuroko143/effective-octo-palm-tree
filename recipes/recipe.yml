@@ -23,4 +23,21 @@ modules:
         - lutris
         - waydroid
 
+  - type: default-flatpaks
+    configurations:
+      - scope: system
+        repo:
+          title: Flathub (system)
+        remove:
+        - com.github.Matoking.protontricks
+        - it.mijorus.gearlever
+        - org.kde.filelight
+        - org.kde.haruna
+        - org.freedesktop.Platform.VulkanLayer.MangoHud
+        - org.freedesktop.Platform.VulkanLayer.vkBasalt
+        - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+        - com.obsproject.Studio.Plugin.OBSVkCapture
+        - com.obsproject.Studio.Plugin.Gstreamer
+        - com.obsproject.Studio.Plugin.GStreamerVaapi
+
   - type: signing
