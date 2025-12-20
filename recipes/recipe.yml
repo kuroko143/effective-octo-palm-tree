@@ -6,16 +6,12 @@ image-version: latest
 
 modules:
   - type: dnf
-    repos:
-      copr:
-        - matinlotfali/KDE-Rounded-Corners
     install:
       packages:
         - alsa-plugins-a52
         - gwenview
         - kcalc
         - kvantum
-        - kwin-effect-roundcorners
         - liquidctl
         - mpv
         - okular
@@ -28,6 +24,40 @@ modules:
         - qemu
         - Sunshine
         - waydroid
+
+  - type: dnf
+    install:
+      packages:
+        - cmake
+        - gcc-c++
+        - extra-cmake-modules
+        - kwin-devel
+        - kf6-kconfigwidgets-devel
+        - libepoxy-devel
+        - kf6-kcmutils-devel
+        - kf6-ki18n-devel
+        - qt6-qtbase-private-devel
+        - wayland-devel
+        - libdrm-devel
+
+  - type: script
+    scripts:
+      - build_kde_rounded_corners.sh
+
+  - type: dnf
+    remove:
+      packages:
+        - cmake
+        - gcc-c++
+        - extra-cmake-modules
+        - kwin-devel
+        - kf6-kconfigwidgets-devel
+        - libepoxy-devel
+        - kf6-kcmutils-devel
+        - kf6-ki18n-devel
+        - qt6-qtbase-private-devel
+        - wayland-devel
+        - libdrm-devel
 
   - type: default-flatpaks
     configurations:
