@@ -25,39 +25,7 @@ modules:
         - Sunshine
         - waydroid
 
-  - type: dnf
-    install:
-      packages:
-        - cmake
-        - gcc-c++
-        - extra-cmake-modules
-        - kwin-devel
-        - kf6-kconfigwidgets-devel
-        - libepoxy-devel
-        - kf6-kcmutils-devel
-        - kf6-ki18n-devel
-        - qt6-qtbase-private-devel
-        - wayland-devel
-        - libdrm-devel
-
-  - type: script
-    scripts:
-      - build_kde_rounded_corners.sh
-
-  - type: dnf
-    remove:
-      packages:
-        - cmake
-        - gcc-c++
-        - extra-cmake-modules
-        - kwin-devel
-        - kf6-kconfigwidgets-devel
-        - libepoxy-devel
-        - kf6-kcmutils-devel
-        - kf6-ki18n-devel
-        - qt6-qtbase-private-devel
-        - wayland-devel
-        - libdrm-devel
+  - from-file: kde_rounded_corners.yml
 
   - type: default-flatpaks
     configurations:
