@@ -1,7 +1,7 @@
 ---
 name: bazzite
 description: This is my personal OS image.
-base-image: ghcr.io/ublue-os/bazzite-dx
+base-image: ghcr.io/ublue-os/bazzite
 image-version: testing
 
 modules:
@@ -24,6 +24,10 @@ modules:
         - qemu
         - Sunshine
         - waydroid
+
+  - type: script
+    scripts:
+      - dx.sh
 
   - from-file: kde_rounded_corners.yml
 
