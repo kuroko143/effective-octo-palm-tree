@@ -26,6 +26,8 @@ dnf5 install -y --enable-repo="docker-ce-stable" "${docker_pkgs[@]}" || {
     fi
 }
 
+systemctl enable docker.socket
+
 # Load iptable_nat module for docker-in-docker.
 # See:
 #   - https://github.com/ublue-os/bluefin/issues/2365
