@@ -2,7 +2,7 @@
 name: bazzite
 description: This is my personal OS image.
 base-image: ghcr.io/ublue-os/bazzite-dx
-image-version: latest
+image-version: testing
 
 modules:
   - type: dnf
