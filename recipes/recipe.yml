@@ -25,6 +25,8 @@ modules:
   - type: script
     scripts:
       - dx.sh
+  
+  - from-file: gnome.yml
 
   - type: default-flatpaks
     configurations:
