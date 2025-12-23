@@ -1,7 +1,7 @@
 ---
 name: bazzite
 description: This is my personal OS image.
-base-image: ghcr.io/ublue-os/bazzite
+base-image: ghcr.io/ublue-os/bazzite-gnome
 image-version: testing
 
 modules:
@@ -10,11 +10,8 @@ modules:
       packages:
         - alsa-plugins-a52
         - gwenview
-        - kcalc
-        - kvantum
         - liquidctl
         - mpv
-        - okular
         - openrgb
         - stow
     remove:
@@ -28,8 +25,6 @@ modules:
   - type: script
     scripts:
       - dx.sh
-
-  - from-file: kde_rounded_corners.yml
 
   - type: default-flatpaks
     configurations:
