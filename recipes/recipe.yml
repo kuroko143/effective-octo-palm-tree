@@ -26,7 +26,7 @@ modules:
     scripts:
       - dx.sh
   
-  - from-file: gnome.yml
+  - from-file: kde.yml
 
   - type: default-flatpaks
     configurations:
