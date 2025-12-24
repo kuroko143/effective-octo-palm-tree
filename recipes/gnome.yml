@@ -3,3 +3,4 @@ modules:
     install:
       packages:
         - gnome-tweaks
+        - fuse-sshfs
