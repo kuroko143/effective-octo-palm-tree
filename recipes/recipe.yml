@@ -1,8 +1,8 @@
 ---
 name: bazzite
 description: This is my personal OS image.
-base-image: ghcr.io/ublue-os/bazzite
-image-version: testing
+base-image: ghcr.io/ublue-os/bluefin
+image-version: stable
 
 modules:
   - type: files
@@ -31,7 +31,7 @@ modules:
     scripts:
       - dx.sh
   
-  - from-file: kde.yml
+  - from-file: gnome.yml
 
   - type: default-flatpaks
     configurations:

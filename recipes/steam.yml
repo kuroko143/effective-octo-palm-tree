@@ -1,0 +1,7 @@
+modules:  
+  - type: dnf
+    install:
+      packages:
+        - libFAudio
+        - steam
+        - xdg-user-dirs

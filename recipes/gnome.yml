@@ -4,3 +4,5 @@ modules:
       packages:
         - gnome-tweaks
         - fuse-sshfs
+
+  - from-file: steam.yml
