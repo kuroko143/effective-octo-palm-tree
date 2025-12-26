@@ -5,6 +5,7 @@ modules:
         - kcalc
         - kvantum
         - okular
+        - python3-pip
 
   - from-file: kde_rounded_corners.yml
   - from-file: steam.yml
